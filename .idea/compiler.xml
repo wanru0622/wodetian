@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="config" />
+        <module name="config-client" />
+        <module name="dept-consumer" />
+        <module name="dept-consumer-8001" />
+        <module name="eureka2-8200" />
+        <module name="eureka3-8300" />
+        <module name="feign" />
+        <module name="hystrix-dashboad-8050" />
+        <module name="zuul" />
+        <module name="zuul-8600" />
+      </profile>
+      <profile name="Annotation profile for eureka" enabled="true">
+        <sourceOutputDir name="../eureka/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../eureka/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-8100" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.5" />
+      <module name="common" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="dept-8000" target="1.8" />
+      <module name="dept-consumer" target="1.8" />
+      <module name="dept-consumer-8001" target="1.8" />
+      <module name="eureka-8100" target="1.8" />
+      <module name="eureka2-8200" target="1.8" />
+      <module name="eureka3-8300" target="1.8" />
+      <module name="feign" target="1.8" />
+      <module name="hystrix-dashboad-8050" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="zuul" target="1.8" />
+      <module name="zuul-8600" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

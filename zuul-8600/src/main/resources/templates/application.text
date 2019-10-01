@@ -1,0 +1,31 @@
+server:
+  port: 8600
+spring:
+  application:
+    name: zuul-8060
+  datasource:
+      username: root
+      password: root
+      url: jdbc:mysql://localhost/txkt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+      driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  instance:
+    #修改显示的名字
+    instance-id: zuul-8060
+    #访问路径可以显示ip
+    ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+#开启熔断机制
+#打开监控配置 让Hystrix监控
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#zuul:
+#  routes:
+#    client:
+#      stripPrefix: false
+#debug: false

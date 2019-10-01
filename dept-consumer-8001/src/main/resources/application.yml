@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: dept-consumer
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/txkt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+
+

@@ -1,0 +1,22 @@
+server:
+  port: 9060
+spring:
+  application:
+    name: config-9060
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wanru0622/git-config.git
+
+eureka:
+  instance:
+    #修改显示的名字
+    instance-id: config-9060
+    #访问路径可以显示ip
+    ip-address: true
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8100/eureka

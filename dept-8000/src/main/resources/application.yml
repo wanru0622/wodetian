@@ -1,0 +1,23 @@
+
+server:
+  port: 8000
+spring:
+  application:
+    name: dept
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/txkt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+eureka:
+  instance:
+    #修改显示的名字
+    instance-id: dept-8000
+    #访问路径可以显示ip
+    ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka,http://localhost:8200/eureka,http://localhost:8300/eureka
+feign:
+  hystrix:
+    enabled: true

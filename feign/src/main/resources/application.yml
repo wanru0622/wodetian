@@ -1,0 +1,30 @@
+
+server:
+  port: 8010
+spring:
+  application:
+    name: feign-8010
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/txkt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+eureka:
+  instance:
+    #修改显示的名字
+    instance-id: feign-8010
+    #访问路径可以显示ip
+    ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka,http://localhost:8200/eureka,http://localhost:8300/eureka
+#开启熔断机制
+feign:
+  hystrix:
+    enabled: true
+#打开监控配置 让Hystrix监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

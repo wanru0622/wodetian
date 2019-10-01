@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: application-config #对应application name
+      profile: dev #对应 profiles
+      label: master
+      #上面三句话就是在 master下面的application-config.yml文件 下面的dev中找对应的配置
+      uri: http://localhost:9060 #config 服务地址

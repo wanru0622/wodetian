@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dept-8000/dept-8000.iml" filepath="$PROJECT_DIR$/dept-8000/dept-8000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dept-consumer-8001/dept-consumer-8001.iml" filepath="$PROJECT_DIR$/dept-consumer-8001/dept-consumer-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-8100/eureka-8100.iml" filepath="$PROJECT_DIR$/eureka-8100/eureka-8100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka2-8200/eureka2-8200.iml" filepath="$PROJECT_DIR$/eureka2-8200/eureka2-8200.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka3-8300/eureka3-8300.iml" filepath="$PROJECT_DIR$/eureka3-8300/eureka3-8300.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feign/feign.iml" filepath="$PROJECT_DIR$/feign/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-dashboad-8050/hystrix-dashboad-8050.iml" filepath="$PROJECT_DIR$/hystrix-dashboad-8050/hystrix-dashboad-8050.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-8600/zuul-8600.iml" filepath="$PROJECT_DIR$/zuul-8600/zuul-8600.iml" />
+    </modules>
+  </component>
+</project>

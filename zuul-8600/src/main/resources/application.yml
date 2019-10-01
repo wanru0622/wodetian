@@ -1,0 +1,30 @@
+server:
+  port: 8007
+spring:
+  application:
+    name: zuul-8007
+
+eureka:
+  instance:
+    #修改显示的名字
+    instance-id: zuul-8007
+    #访问路径可以显示ip
+    ip-address: true
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+
+zuul:
+  #真的不能用 "*" 所有不能用
+  ignored-services: dept
+  routes:
+    route-mapping1:
+      serviceId: dept
+      path: /mydept/**
+    route-mapping2:
+      serviceId: dept
+      path: /mydept2/**
+  #加前缀
+  #prefix: /prefix
